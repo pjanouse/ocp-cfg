@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cluster-config-bootstrap
+  namespace: openshift-gitops
+  labels:
+    gitops.ownedBy: cluster-config
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: https://api.hive.rhood.us:6443
+  project: default
+  source:
+    path: clusters/ocp/argocd/bootstrap
+    repoURL: https://github.com/pjanouse/ocp-cfg.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
