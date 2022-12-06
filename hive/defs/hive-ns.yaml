@@ -4,4 +4,4 @@ metadata:
   name: hive
   labels:
     name: hive
-
+    argocd.argoproj.io/managed-by: openshift-gitops
