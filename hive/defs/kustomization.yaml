@@ -3,3 +3,8 @@ kind: Kustomization
 
 bases:
 - ../../olm
+
+resources:
+- https://operatorhub.io/install/hive-operator.yaml
+#- hive-config.yaml
+
