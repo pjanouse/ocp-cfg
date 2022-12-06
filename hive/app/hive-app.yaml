@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hive
+  name: hive-app
   namespace: argocd
 spec:
   destination:
     namespace: hive
-    server: https://kubernetes.default.svc/
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: hive/defs
@@ -15,6 +15,6 @@ spec:
   syncPolicy:
     automated:
       prune: true
-      selfHeal: true
+      selfHeal: false
     syncOptions:
     - CreateNamespace=true
