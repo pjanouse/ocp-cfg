@@ -4,5 +4,5 @@ kind: Kustomization
 namespace: olm
 bases:
 - ../../olm
-resources:
-- hive-ns.yaml
+#resources:
+#- hive-ns.yaml
