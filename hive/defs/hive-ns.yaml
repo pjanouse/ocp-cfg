@@ -4,4 +4,4 @@ metadata:
   name: olm
   labels:
     name: hive
-    argocd.argoproj.io/managed-by: openshift-gitops
+    argocd.argoproj.io/managed-by: argocd
