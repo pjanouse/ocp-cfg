@@ -23,4 +23,4 @@ spec:
   - group: apps.openshift.io
     kind: DeploymentConfig
     jsonPointers:
-    - /spec/install/spec/deployments[0]/spec/template/spec.containers[0]/ports
+    - /spec/install/spec/deployments[0]/spec/template/spec/containers[0]/ports
