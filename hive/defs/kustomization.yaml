@@ -6,4 +6,4 @@ bases:
 
 resources:
 - https://operatorhub.io/install/hive-operator.yaml
-- hive-config.yaml
+#- hive-config.yaml
