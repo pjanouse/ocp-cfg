@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: olm-app
+spec:
+  destination:
+    namespace: olm
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: olm
+    repoURL: https://github.com/pjanouse/ocp-cfg.git
+    targetRevision: nee
+  syncPolicy:
+    syncOptions:
+    - RespectIgnoreDifferences=true
+    - CreateNamespace=true
+
