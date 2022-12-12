@@ -1,0 +1,10 @@
+apiVersion: hive.openshift.io/v1
+kind: HiveConfig
+metadata:
+  name: hive
+#  annotations:
+#    argocd.argoproj.io/sync-wave: "5"
+spec:
+  logLevel: debug
+  targetNamespace: hive
+
