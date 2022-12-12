@@ -12,6 +12,9 @@ spec:
     repoURL: https://github.com/pjanouse/ocp-cfg.git
     targetRevision: nee
   syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
     - RespectIgnoreDifferences=true
     - CreateNamespace=true
