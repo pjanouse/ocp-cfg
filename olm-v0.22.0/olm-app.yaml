@@ -8,7 +8,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: olm
+    path: olm-v0.22.0
     repoURL: https://github.com/pjanouse/ocp-cfg.git
     targetRevision: nee
   syncPolicy:
@@ -18,4 +18,4 @@ spec:
     syncOptions:
     - RespectIgnoreDifferences=true
     - CreateNamespace=true
-
+    - ServerSideApply=true
